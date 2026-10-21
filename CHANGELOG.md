@@ -4,7 +4,7 @@
 
 ### Fixed
 
-- Subagent cards and the async widget said "Configure the expand key for live detail" whenever Pi's app keybindings were not loaded in the process, for example in RPC or print mode, although the key was bound (`ctrl+o` by default). The hint now reads "Press the expand key for live detail" there, as the `[subagent]` chat messages already fall back to "click", and the status line of slash-command launches such as `/run` no longer shows an empty key (`3 tools |  live detail`). Fixes [#2982](https://github.com/nicobailon/pi-subagents/issues/2982).
+- Subagent cards said "Configure the expand key for live detail" whenever Pi's app keybindings were not loaded in the process, for example in an HTML session export, although the key was bound (`ctrl+o` by default). The hint now reads "Press the expand key for live detail" there, as the `[subagent]` chat messages already fall back to "click". In RPC mode the status line of slash-command launches such as `/run` no longer shows an empty key (`3 tools |  live detail`). Thanks to [@JohannesBertens](https://github.com/JohannesBertens) for [#2983](https://github.com/nicobailon/pi-subagents/pull/2983) ([#2982](https://github.com/nicobailon/pi-subagents/issues/2982)).
 
 ## [0.79.2] - 2026-10-20
 
